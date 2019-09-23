@@ -1,0 +1,15 @@
+server:
+  port: 8142
+
+spring:
+  application:
+    name: Eureka-Server
+
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      default-zone: http://peer2:8143/eureka/
+  server:
+    enable-self-preservation: false
